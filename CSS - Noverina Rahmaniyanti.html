@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <style>
+        a {
+            color: oldlace;
+            font-family: 'Oswald', sans-serif;        }
+        body {
+            background-color: wheat;
+        }
+        #font-size {
+            font-size:20px;
+        }
+        #color {
+            background-color: navy;
+            color: oldlace;
+        }
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            position: relative;
+        }
+        .flex-container > div {
+            margin: 10px;
+        }
+        .vertical-center {
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
+    <title>Edit Data Mahasiswa</title>
+</head>
+<body>
+    <div class="flex-container" id="color">
+        <div>
+            <img src="http://ilkom.unila.ac.id/wp-content/uploads/2018/03/Logo-unila-2018.png" height="100" width="100">
+        </div>
+        <div>
+            <div class="vertical-center">
+                <h1>Data Mahasiswa<br><a href="https://www.unila.ac.id/">Universitas Lampung</a></h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="flex-container">
+        <div id="font-size" style="flex-grow: 1;">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>Noverina Rahmaniyanti</td>
+                </tr>
+                <tr>
+                    <td>NPM</td>
+                    <td>:</td>
+                    <td>15xxxxxx96</td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>-/-/-</td>
+                </tr>
+                <tr>
+                    <td>Fakultas</td>
+                    <td>:</td>
+                    <td>MIPA</td>
+                </tr>
+                <tr>
+                    <td>Jurusan</td>
+                    <td>:</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Strata</td>
+                    <td>:</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>UKM</td>
+                    <td>:</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <br>
+            <div>
+                <label for="riwayat-pendidikan">Riwayat Pendidikan</label>
+                <ol>
+                    <li>SDN 1 Gunung Madu</li>
+                    <li>SMP Satya Dharma Sudjana</li>
+                    <li>SMAN 1 Kotagajah</li>
+                </ol>
+            </div>
+            <div>
+                <label for="riwayat-organisasi">Riwayat Organisasi</label>
+                <ul>
+                    <li>HIMAKOM</li>
+                    <li>BEM-F</li>
+                </ul>
+            </div>
+        </div>
+        <div style="flex-grow: 3;">
+            <div class="flex-container">
+                <div style="flex-grow: 3;"></div>
+                <div style="flex-grow: 1;">
+                    <h2>Langkapi Data!</h2>
+                    <form action="" style="font-size: 18px;">
+                        <table>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>: </td>
+                                <td>
+                                    <input type="date" name="tanggal-lahir" id="tanggal-lahir">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jurusan</td>
+                                <td>: </td>
+                                <td>
+                                    <select name="jurusan" id="jurusan">
+                                        <option value="fisika">Fisika</option>
+                                        <option value="kimia">Kimia</option>
+                                        <option value="matematika">Matematika</option>
+                                        <option value="ilmu komputer">Ilmu Komputer</option>
+                                        <option value="biologi">Biologi</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Strata</td>
+                                <td>: </td>
+                                <td>
+                                    <input type="radio" name="strata" id="d3">
+                                    <label for="d3">D3</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <input type="radio" name="strata" id="s1">
+                                    <label for="s1">S1</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <input type="radio" name="strata" id="s2">
+                                    <label for="s2">S2</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UKM</td>
+                                <td>: </td>
+                                <td>
+                                    <input type="checkbox" name="ukm" id="ukm-u">
+                                    <label for="ukm-u">UKM-U</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" name="ukm" id="ukm-f">
+                                    <label for="ukm-f">UKM-F</label>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="button" value="Submit" onclick="alert('Tersimpan')">       
+                    </form>
+                </div>
+                <div style="flex-grow: 3;"></div>
+            </div> 
+        </div>
+        <div style="flex-grow: 2;"></div>
+    </div>
+</body>
+</html>
